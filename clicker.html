@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      width: 60%;
+      margin: auto;
+      background-color: red (178, 224, 255);
+      background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEpP7j8DN9Fmp7mhG3H97sx-EVst0ZNRkLsJRbE9T2jKR9AGg5q-Sx7N7UBUE5i2GLBWo:https://purepng.com/public/uploads/large/purepng.com-cookiescookiessnacksbaked-snacksflour-cookieschocolate-cookies-1411527248836s8vm8.png&usqp=CAU")
+    }
+  </style>
+  <title>a clicker game</title>
+</head>
+
+<body>
+  <button id="upgrade">upgrade cps</button>
+  <button id="autoclick">auto click</button>
+
+  <p id="ifk">score:0</p>
+
+  <img id="score"
+    src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAHoAfAMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAFBgAEAgMHAQj/xAA7EAACAQMDAQYDBgMIAwEAAAABAgMABBEFEiExBhMiQVFhcYGRFCMyobHBQtHwBxUkUmKy4fEzU3JD/8QAGQEAAgMBAAAAAAAAAAAAAAAAAwQBAgUA/8QAIxEAAgICAwADAAMBAAAAAAAAAQIAAxEhBBIxEyJBMlFhBf/aAAwDAQACEQMRAD8A7jUqVK6dJWLsqAs5CqOpNUdS1SGxXB8cvkgP6+lKGraxNM338pKk8IDhfWlL+WlWvTGKeM9m/BGe77Q2UGe73THp4en1oJc9rLh1/wAOkSE9P4iOaBszSCVCD3gI8JPUVVdu7kBGcjqQKy7Odc51qPrxKl/2ErnXNSl4e8lQeiYXP0xVITXMuXeWV93A3MePrUAWXiMBjgc9fofrWdw8UUYaV+7RMEsTxwaAXdjsmGCqvgmpppY1JEjAg5JycVRXVLyO52x3Eqqf9ZGK0/3na3bSLaXEbqOp9Dj9Kwt50hY4Q4ckoeoPHp5c1Yd1MqepEL2narWYLiQNcM8cR2gSENu9z54po0btzY3TCHUF+ySk4Dk/dt8/L50hsCUxjecYJxjNYNbKUIILM2ccen/VHr5diH3UE3HRxO1qQwyDkHkGsq5h2S7Sy6TcpYXrFrJyAhPJizjkf6faunA5rXpuW1ciZ1tTVnBntSpUo0FJQ7V9RWxg4/8AK2do9Pc1fkcIhZjgAZNJOr3L3M7vIceg9qU5l5qTXpjPGp+R9+CUL64ZmZ2JZyeR60Ium725Cb9qqNzHz+FYalLJF3nctlkA3Hyxk4x9KmjW7Nbd/K24zAEg8bawgCfsZraGhLSRIzLMYzLKOFPJGPby969g0pXuu/u5CxOVWBSQoz6jPJq6gWMA4GAPCBxWq4uwrZj3F0bKhRnPPTFcJBm517skMuyMABWA4+FJ/bWZWMNqJNiO2WdmG0YpyuUMsUrBgm5fAc8g9RSDd9mRqKySQybZS+XY85b1o/H6q+TBWEkam6ztIfsqNaiNkYDYI23A/TqfjRRLc92negHOSFUY8qGdnOzT6PdrP9qaSRyEIUbVYZ9KZ7qCRb+Nt33fOcAcfH5/nU2kdtHMqmcblCNGWOKPujGT/n64+tV7ZI7NdpkZ/G0hzztyf0q/djeSE4GcEHrQ+5KKv3jHOSPFjI+dBzCTKWIzxBkEewjO9x+LPsPanDsR2kIm/um/kY9BbyP/ALSf0+npSVY3bJqDWTjdCVHdv0xU1KJom3neCMAkcY9DRqbWpsErZWtqEGdxqUt9h9eOtaWFnbN3b4SU/wCb0b+vOmSt5GDKCJkMpU4ME6/c91arGp8UjY+VKV6gVDIo3Feo9aPa6wlunVm4RQKAxLHbKIWZnPPLnk1h8t+9xz+TU469axiJ/aC6gaC6hc5khl7pt52gZUHr6AGgs/aa60+3s/sTvOVBEqzjdkgeeOhH7UZ7Q6BPOt7c27Avcyd4Yy5UYCgD/bS5Z9nru+uobeG2d4OM3G8gAeeM/wAqPV8JSQ/cGdA0O+OsaPDehO7kcHeo5AbOOM1jFIRdd2crgkhs4xn/AIorp2lQ6XpcVpbfgTqTySfP860C2jSY3DkBE59OfX9aSZQG1CBmI3MriNngePJAUDrySaXLzW7PTrjuwN0oXxKv8I9fr+9Ml4JJlcbOCRjJ96B9odIhliN1bW8S3DJ3bBuC656H088H3+FXqUFtyrHUv6VdWd0v2i3kWUhcg9B0rVPcn7QoRtrEHPn5Uhdlbu6s9UMTAqpyNowfPyp01Czt0kS/IPeQg7Xwc8+XHWpsp6vgzlfImcLmWMqq+ZZyoxzQ7WLuK2KBdokdl567selTTpnyzIMjO0hvr+9B+2NlJLNbXMTbADgOAeDj0+IAqtdYZwCZLNhciGHj3NDcIAvjXJH5/vV68RZvFxhvLHTj/kUK7Lvc39qj30LKVUlcng+4x0oh33DgEBUOGOPLrVbFKt1/qXrbIzMOx+oPpPaa2kZtkUz91KOg2t/I4PyrtQrgV8mZpmUHKnLMf4fQV3DQrs32jWV0SC0sKs2PXHP51q8F8grEeYmCGi7qkp+0XByfxkAfzoJOha4V2YgKcfCimoeN5Mcliep96GzsiJN3pB5JHPGKxrDlyZooMKBK+qSMtsiw4KsSuevH9Zq9oMKW2kxhWZjg8k9Dmg0G6ZDGxGFfAOM8EdKYYI0s7ZYdx4GfWpUkCVYTK1mMonMWCUAXYeOeuSfPjFaJEQISB4z6nIH/ABVi1iCWveOfG65Jz1Jqk4eGSXdjY+NufLHtVzrGZQfuJHVw27+LjyPzqrNB9pRw4BGSMMARiqGta02mgyTYaEeajBqvYdp7bUStv9nnhnLDakgAMg9sH0558quqMR2WVJHhi5pmi31zq8lxd3Kbo2ZdqIoGATxjHHypxnNylmywxNM4xkbscHjr9a1iOOO/38LuwzKPpRN5RtjXy6DHrzVmtLSAgECRWvcSM3JTaCQfN+ePeq13uuR3YRTuGfGuQgoysYBZygPOeTn5/Sgl9IsZljGCzruyfPB6ULOTLYwJZs4I7O2UQjIKghuBx5cdKpM6vMUVc7uSM5pa/vG5767uReSmOAj7jHgKgeL4H0o7pVxHPK7RZwwyrE+VFekp9jucjg6E2aiWMYDM3vny5ziumf2bXSS9lYUL8wyvGQfLnP6MK5lq21MKpzvOcY8qL9kr5rbT5kHnOT1x/CtH4bdWzKcpey4jXqKsGkA5wx6UH1hgIhGM7nxnmmLWYe7u3BHhJ3jj50A1Bf8AEI3QcY48vOkLV6uQYzU3ZAZU0ofeDeu1lIUj14yD/XvTBIA6NjklecUEMsdhKhlkCRMTuz1bjjp/XNErK7jurXfHKG9l8q4HIlW9m6CZpLLxAEqxVfkarvmRssMr79KrT3DWEbTRZKuwUKB05Jzn51alieWJJv8AxjbkjGTmp3jMgwJ2m02HVLU20r7DI42uoztORjj40v39vqVjq6XIkWXvAUklUbRtxgDHkeKbp0WcDZIAw81PpVKYs/hKBgB4izA8Dngf10o1VvUEHwwbqSdShZtLLN4gTtwXI4xReZT3C7hyB4scnr0z64rRaRzNG+yBBExPhPvWF3dOrJaRR5aTwAg5VaEfcCSM/stIVktnbkkN06D2+dLusW+VwrcDPK+QznH6UwpEYbR4hIXPJyTk5oRLF3kvjcu6qTx7j4VwOGk+iJt1ot1Gs0cSbvtLAbwcqADyT6Ua0mKC3WRpGKpCqpn1P8sYoj97JIiFtqFvFx4ug6DFW9UiEGlsibsbizFycAev5flR3uLgLKomDmCtTmheXLORg4yw/KmvsFojapo8twWK/wCIZRz18K1yvWr8z38LRSsdjhj/AKiPLFfQXYCyay7KWQkQpJMpnYEcjecjPyxTnG4+MZi/Iu1qb+0cJ7pLhVyV4bA+lKssYRTjOQPCCxOCa6DNGssbRuMqwwRSVqdpJazvCw442sB1FA/6FGG+QeGE4VoK9D7OYdoLuaTUr6OWZkhtwvQnLbiABwPn8Aaqdmb3V47sT29xmBMF43LEOD5Dzzwef1ps1Ps9aanfvP3jpLGVctnhwBwOfcH61Za2S28ChR3g3EgDr70MX1ivGNwrVuWhOIm/so50cKki7sY5X1/SiAuI5LXuw43jwkYxz8KBQiSzgMdswIU+Ld0Hw/KrFteRGUC5aNXH4Qx+fApbOfJfrPbgqgUSYWUnw4GT8q9IkCKoXxNgKQoz5/y/Oqt7cwpN3tz4CBw2/wAOfLjPJrEalCJCH73xD8JUjHuPlUdZGYQdtnC7QcYHtQW/RnuUlt38SHBB56Cq2v69DY2czoXyi8Lggt9aV+y1rLca40ryjfGuHUy7iXbk8Z6YJFGqpJUuTjEq74PWOUt7J9lZgHeQD8A4rBIxJZxvu3k8nByAR+4rRcslvKyqwBzknI5rW7MHCRKzvKoG0eR9ePjQ/ZcCWLBXuNRl+7QwRIMuT+JvID4c/WvdY2mErJlo2GNoOB16dKvINmFTEMSkjAUHpmgWoyCWTuU3A54b2+HSoGyMS+MCUNG7NWura9aWkMZXvWAkwxICDlj164B+tfQkaqiKiDCqMAegrlP9klhqcnaC+1Se2eHTFtzDbvIm3vmLDLL6jwnn3rrFb/HUhPtMe9gX1JVDUdNjv1AkZlZQQpB6Z9R59Kv1KKyhhgwSsVOREHUrGSynAlGBzyOjf1+9DZYWmCqwCp/+hwPEPIV0i8tYruExTLwehHUe4pS1TRbm0Luv3kR/i9Pj6fGsXk8Nqz2TYmrx+UH03sCOsW8d4GB524XilLt3P3Wl/hxPn7rg9Rz+xpwc7zsfP/yD1+GKU+2ukTavLaW9urF4myhzwx9Pp50txwPkGfIxaT0IEF2Yju7JZHZ47gRF0lEhOxwRjIPlgn6UxdndXXUbZZpIwZRwUJBHHU9KCQ215bWTwxW8qzuNsgaEgDGPP0561e0a0Sz2qillXAyAck9Seac5RQiAqBzGd0ife8sayDGGTbkH35oXIY4GaOxt4IFc5BRMZP8A1RJptxVY8EEeLjzx5eeKH6nfR2y75Sgz/l424pAZOhGML6ZrFisKPNtZnxlu8OT9K2CeFLUXA6uMIq/PIPr50tTdsoBM0eCU2lQXbg+fTHtRHT7sarDELaJy3AjjRdxJ9AKKabAMsJQOmdGWrq7J3EvjPTBwDV3sh2dl1++724V1sYz94+cb/PYP39BRvROwtxc7ZtZfuYv/AEJgu3xPl8vyp/tLaC0t44LaJIokGFRBwKf43DOezxO/lD+KzOKNI41REVVUYVVGAB6VnUqVqTPkqVKldOkrwgHrXtSunQJqXZ21ujvh+5kHoMqflSzd6Rd6e7PJbl8dJFGR9fKug1ieopO7h1WbxgxivlOmvROWT5Z9odM8/iPK1olIG0LgLg9a6NqtnayRBpLaFm3dWjBoLDZWjXhVrWAruHBjGOgpBuCVOO0dHLBHkTmSMiPYJu8Q4AEh8vbz/OhrdjO0Gvagss9tKtmuS2/wbz5cHGa7XDbQQYEEMcYx0RAP0reKco4YTZMWs5ZbQE47F/ZDdXTZurqOBM+EfiIHwHX4ZFdM7PaBY6Dp1taWsMe6GIRmfuwHkx1JI9aL1BTqoBFWct7PMV7UqVaVkqVKldOn/9k=">
+    </body>
+  <script>
+
+
+    document.getElementById("upgrade").addEventListener("click", upgradee)
+    document.getElementById("score").addEventListener("click", addscore)
+    var score = 0
+    var increase = 1
+   var cost=10
+var autoclicky= 10
+
+    
+    function addscore() {
+      score = score + increase
+      document.getElementById("ifk").innerText = score
+
+    }
+    function upgradee() {
+      document.getElementById("ifk").innerText = score
+      increase=2
+    }
+function upgradee(){
+  if (score>=score){
+    score=score - cost
+increase = increase + 1
+    document.getElementById("score").innerText= score
+  }
+
+}
+document.getElementById("autoclick").addEventListener("click", autoclick)
+function autoclick() {
+  if(score>=cost){
+    setInterval(addscore, .2)
+    score = score + autoclicky
+  }
+  document.getElementById("score").innerText
+}
+  
+
+
+  </script>
+
+</html>
